@@ -1,0 +1,16 @@
+IF WE NEED TO FIND OCCURANCE OF STRING THEN FIRST TAKE ON EMPTY DICTIONARY THE USING HASHING WE STORE THE VALUE
+EX..
+def fun(string):
+    st={}
+    arr=[]
+    for i in string:
+        if i in st:
+            st[i]+=1
+        else:
+            st[i]=1
+    for i in st:
+        if st[i]>1:
+            arr.append(i)  
+    return arr
+string='goggle'
+print(fun(string))
