@@ -1,0 +1,8 @@
+def subsequence (input,output) :
+        if input==0:
+	print(output,end=' ')
+        subsequence(input[1:],output)
+        subsequence (input[1:],output+input[0]) 
+input='adsfscvscs'
+output=' '
+subsequence (input,output)
